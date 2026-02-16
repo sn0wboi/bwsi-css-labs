@@ -42,8 +42,20 @@ def main():
     print(f"===== Simple Calculator =====")
 
     # Ask the user for sample input    
-    num1 = float(input("Enter the first number: "))
-    num2 = float(input("Enter the second number: "))
+    num1_correct = False
+    num2_correct = False
+    while(num1_correct == False):
+        try:
+            num1 = float(input("Enter the first number: "))
+            num1_correct = True
+        except ValueError:
+            print("Try again, that was not a compatible data type")
+    while(num2_correct == False):
+        try:
+            num2 = float(input("Enter the first number: "))
+            num2_correct = True
+        except ValueError:
+            print("Try again, that was not a compatible data type")
     operation = input("Enter the operation (add, subtract, multiply, divide): ").strip().lower()
 
     # Perform the calculation and display the result
