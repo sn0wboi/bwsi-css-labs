@@ -1,7 +1,7 @@
 """
-tests_1c.py
+tests_1d.py
 
-This module contains unit tests for the max_subarray_sum function defined in lab_1c.py.
+This module contains unit tests for the two_sum function defined in lab_1d.py.
 """
 
 import pytest
